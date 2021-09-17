@@ -1,0 +1,29 @@
+.content {
+    height: 100vh;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chessboard {
+    box-sizing: content-box;
+    height: 800px;
+    width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.whiteCell {
+    max-height: 100px;
+    min-width: 100px;
+    background: #fff;
+}
+
+.blackCell {
+    max-height: 100px;
+    min-width: 100px;
+    background: #000;
+}
