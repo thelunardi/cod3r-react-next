@@ -1,0 +1,14 @@
+#integration2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redClass {
+    color: red;
+}
+
+.blueClass {
+    color: blue;
+}
