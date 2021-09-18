@@ -1,5 +1,5 @@
 import styles from './chessboardCod3r.module.css'
-import LineBoard from '../../components/chessboard/LineBoard/LineBoard'
+import LineBoard from '../../../components/chessboard/LineBoard/LineBoard'
 
 export default function ChessboardCod3r() {
     return (
