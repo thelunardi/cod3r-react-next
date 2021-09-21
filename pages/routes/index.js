@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import router from 'next/router'
 
-export default function routes() {
+export default function Routes() {
     function navigation(url) {
         router.push(url)
     }
@@ -20,13 +20,13 @@ export default function routes() {
         <div>
             <h1>Rotas - Index</h1>
             <ul>
-                <Link href="routes/params?id=29&nome=Maria">
+                <Link href="routes/params?id=29&nome=Maria" passHref>
                     <li>Params: Maria - 29</li>
                 </Link>
-                <Link href="routes/123/buscar">
+                <Link href="routes/123/buscar" passHref>
                     <li>Buscar - 123</li>
                 </Link>
-                <Link href="routes/123/Daniel">
+                <Link href="routes/123/Daniel" passHref>
                     <li>Buscar - Daniel</li>
                 </Link>
             </ul>

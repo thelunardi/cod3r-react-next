@@ -8,8 +8,8 @@ export default function NameAndId() {
 
     return (
         <div>
-            <h1>Rotas -> {id} -> {name}</h1>
-            <Link href="/routes">
+            <h1>Rotas - {id} - {name}</h1>
+            <Link href="routes" passHref>
                 <button>Voltar</button>
             </Link>
         </div>

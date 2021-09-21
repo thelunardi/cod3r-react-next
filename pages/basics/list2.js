@@ -8,11 +8,11 @@ export default function listTwo() {
 
 function createList () {
     const list = [
-        <span>1,</span>,
-        <span>2,</span>,
-        <span>3,</span>,
-        <span>4,</span>,
-        <span>5,</span>,
+        <span key={1}>1,</span>,
+        <span key={2}>2,</span>,
+        <span key={3}>3,</span>,
+        <span key={4}>4,</span>,
+        <span key={5}>5,</span>,
     ]
     return list
 }

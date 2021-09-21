@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-export default function forms() {
+export default function Forms() {
     const [value, setValue] = useState('')
 
     const styles = {
