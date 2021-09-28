@@ -1,19 +1,29 @@
-// sempre vai usar o SSG
-export function getStaticProps() {
+export async function getStaticProps() {
+    console.log('[SERVER] creating data on server')
+    const response = await fetch('http://localhost:3000/api/products')
+    const products = await response.json()
+
     return {
-        // incremental static regeneration
-        revalidate: 7, // segundos
         props: {
-            number: Math.random()
+            products
         }
     }
 }
 
-export default function Static3(props) {
+export default function Static4(props) {
+    console.log('[SERVER] rendering the component')
+    function renderProduct() {
+        return props.products.map(product => {
+            return <li key={product.id}>{product.name} costs ${product.price}</li>
+        })
+    }
+
     return (
         <div>
-            <h1>Estático 03</h1>
-            <h2>{props.number}</h2>
+            <h1>Estático 04</h1>
+            <ul>
+                {renderProduct()}
+            </ul>
         </div>
     )
 }

@@ -1,17 +1,17 @@
-// import { useEffect, useState } from 'react'
+// sempre vai usar o SSG
+export function getStaticProps() {
+    return {
+        props: {
+            number: Math.random()
+        }
+    }
+}
 
-export default function Static1() {
-    // const [num, setNum] = useState(0)
-
-    // com o useEffect, o next entende que o conteúdo é dinâmico nese exemplo
-    // useEffect(() => {
-    //     setNum(Math.random())
-    // }, [])
-
+export default function Static2(props) {
     return (
         <div>
-            <h1>Estático 01</h1>
-            {/*<h2>{num}</h2>*/}
+            <h1>Estático 02</h1>
+            <h2>{props.number}</h2>
         </div>
     )
 }
