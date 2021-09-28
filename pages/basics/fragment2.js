@@ -1,5 +1,5 @@
 // erro comum do react - elementos adjacentes
-export default function fragment1() {
+export default function Fragment2() {
     return (
         <>
             <h1>Título</h1>
